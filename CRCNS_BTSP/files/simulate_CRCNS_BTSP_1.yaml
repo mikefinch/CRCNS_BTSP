@@ -1,0 +1,56 @@
+data_file_name: 20240727_CRCNS_BTSP
+num_inputs: 200
+input_field_peak_rate: 40.0
+input_field_width: 90.0
+track_length: 180.0 #cm
+run_vel: 30.
+num_cells: 500 #yaml
+initial_ramp_peak_val: 8 #yaml
+target_asymmetry: 2.2 #yaml
+target_peak_shift: -12.5
+target_ramp_width: 160.
+input_field_peak_rate: 40. ## data.py
+initial_ramp_peak_val: 8.
+spike_threshold: 2.
+initial_induction_dur: 300.  # ms
+pause_dur: 500.  # ms
+reward_dur: 500.  # ms
+plateau_dur: 300.  # ms
+basal_plateau_prob_ramp_sensitivity: 0.
+reward_plateau_prob_ramp_sensitivity: 2.
+k_dep: 4.249387E-01
+k_pot: 1.109682E+00
+peak_delta_weight: 3.680311E+00
+down_dt: 10
+dt: 10.
+ramp_scaling_factor: 2.956E-03
+target_peak_shift: -12.5
+target_asymmetry: 2.2
+target_ramp_width: 160.
+num_laps: 10
+local_signal_decay: 1.664103E+03
+global_signal_decay: 4.370065E+02
+peak_basal_plateau_prob_per_sec: 0.0075
+peak_reward_plateau_prob_per_sec: 0.035
+f_dep_half_width: 9.977173E-02
+f_dep_th: 2.618154E-02
+f_pot_half_width: 4.541096E-01
+f_pot_th: 4.150117E-01
+peak_delta_weight: 3.680311E+00
+basal_target_representation_density: 0.5
+reward_target_representation_density: 1.
+
+track_phases:
+  - lap_type: explore
+    label: 'novel explore'
+    num_laps: 10
+    color: 'c'
+  - lap_type: reward
+    label: 'fixed reward'
+    reward_loc: 90.
+    num_laps: 10
+    color: 'r'
+  - lap_type: explore
+    label: 'familiar explore'
+    num_laps: 5
+    color: 'k'
